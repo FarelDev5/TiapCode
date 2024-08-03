@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='app/res/des/font.app.css'>
+  <link rel='stylesheet' href='app/res/config/view.css'>
+  <link rel='stylesheet' href='app/res/des/style.app.css'>
+  <title>TiapCode.id - Belajar Mengembangkan website Sendiri</title>
+</head>
+
+<body>
+  <div class='app'>
+    <content id='ctx'>
+      <h1>Semua :</h1>
+      <div class='item-x-group' style='display: flex;'></div>
+      <br>
+      <div class='ui-flex' style='display:flex'></div>
+      <content id='load--data-ctx'></content>
+    </content>
+    <div class="ctx-1">
+      <content id="ctx--nav"></content>
+      <div class="loading">
+        <img controls width="100" height="100" src='/app/assest/images/images/loading.png'>
+        <p style="font-size: 12px;" align="center">Memuat.</p>
+      </div>
+    </div>
+    <div class="ctx-2">
+      <content id="ctx--account">
+        <div class="account--container">
+          <div style="display:flex;" class="acc-ctx1">
+            <p>Name :
+            <p id="data_user-name">User177</p>
+            </p>
+          </div>
+          <div style="display:flex;" class="acc-ctx1">
+            <p>Email :
+            <p id="data_email-name">Tidak Ada</p>
+            </p>
+          </div>
+          <div class="progress-ctx">
+            <div class="progress">
+              <p>Html</p>
+              <progress id="html--progress-value" max="12" value="0"></progress>
+              <p>Css</p>
+              <progress id="css--progress-value" max="12" value="0"></progress>
+              <p>JavaScript</p>
+              <progress id="js--progress-value" max="11" value="0"></progress>
+            </div>
+          </div>
+        </div>
+      </content>
+
+      <div class="feedback--ctx">
+        <content id="feedback">
+          <h1>Contact Us.</h1>
+          <form onsubmit='massage()' action="mailto:farel.developer55@gmail.com" method="get">
+            <input type="text" name="subject" placeholder="Subject" required>
+            <input type="text" name="body" placeholder="Body" required>
+            <br>
+            <input type="submit" value="Kirim">
+          </form>
+        </content>
+      </div>
+    </div>
+    <!-- nav -->
+
+    <nav style='position:fixed;bottom:0;left:0;' id="navigation">
+      <button id="button-nav1">
+        <img controls width="30" id="ima1" height="30" src="app/assest/ui/draw.code.svg">
+        <p aling="center">Kode Editor</p>
+      </button>
+      <button id="button-nav2">
+        <img controls width="30" id="ima2" height="30" src="app/assest/ui/home.active.svg">
+        <p aling="center">Beranda</p>
+      </button>
+      <button id="button-nav3">
+        <img controls width="30" id="ima3" height="30" src="app/assest/ui/draw.user.svg">
+        <p aling="center">Akun</p>
+      </button>
+      <button id="button-nav4">
+        <img controls width="30" id="ima4" height="30" src="app/assest/ui/draw.email.svg">
+        <p aling="center">Masukan</p>
+      </button>
+    </nav>
+
+
+    <!--header element-->
+    <header id='ctx--head'>
+      <div style='display:flex;' class='head-flex--ground'>
+        <p class='data-flex-ctx1'></p>
+        <p class='data-flex-ctx2'></p>
+      </div>
+      <div style='display:flex; align-items:center;' class='hdr--group'>
+        <p style='font-size: 10px; margin-top: 5px;'>
+          Developer :
+        <p id='data-development' style='font-size: 10px;margin-top: 5px;'></p>
+        </p>
+      </div>
+      <div class='screen-lock'></div>
+      <div class='side--bar'></div>
+      <div style='position:absolute;top: 0;right:1rem;' class='x-mark'>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
+
+    <div class="credit--ctx">
+      <div class="credit--ctx-container">
+        <h2>Kredit</h2>
+        <center>
+          <img controls width="100" height="100" src="/app/assest/images/icon/app_ic.png">
+        </center>
+        <div class="flex--ctx" style="display:flex;align-items:center;justify-content:center;">
+          <p>Di Buat Oleh :</p>
+          <p id="devName-studio"></p>
+        </div>
+        <div class="flex--ctx" style="display:flex;align-items:center;justify-content:center;">
+          <p>Developer :</p>
+          <p id="devName-developer"></p>
+        </div>
+        <div class="flex--ctx" style="display:flex;align-items:center;justify-content:center;">
+          <p>Programmer :</p>
+          <p id="devName-programmer"></p>
+        </div>
+        <div class="flex--ctx" style="display:flex;align-items:center;justify-content:center;">
+          <p>Designer :</p>
+          <p id="devName-designer"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- login page -->
+
+    <div class="login--ctx">
+      <div class="ground">
+        <video controls autoplay muted loop>
+          <source src="/app/assest/images/images/live_bg.mp4">
+        </video>
+        <div class="video--ground"></div>
+      </div>
+      <div class="container--login">
+        <div class="text" style="display:flex;justify-content:center;align-items: center;margin:2rem 0;">
+          <h3 style="color:red;">Tiap<h3>Code.id</h3>
+          </h3>
+        </div>
+        <p>Selamat Datang Di sini Anda Akan Belajar Tentang Dasar Dasar untuk mengembangkan website anda sendiri dan di lengkapi tips, code editor, dan contoh kode yang dapat memudahkan anda dalam belajar coding.</p>
+
+        <center>
+          <button id="login" onclick="newAccount()">buat Akun</button>
+        </center>
+      </div>
+    </div>
+    <div class="login--ctx-page">
+      <div class="login--container">
+        <center>
+          <h2>Buat Akun</h2>
+        </center>
+        <form onsubmit='createAccount(event)'>
+          <input type="text" id="userName" placeholder="Nama Kamu" required>
+          <input type="email" id="emailAddress" placeholder="Alamat Email" required>
+          <input type="password" id="passAccount" placeholder="Kata Sandi" required>
+          <br>
+          <button type="submit" id="creatingAcc">Buat Akun</button>
+          <button type="button" id="backAccount">Kembali</button>
+        </form>
+      </div>
+    </div>
+    <div class="loading--app">
+    </div>
+</body>
+<script>
+  var $ = {};
+</script>
+<script src='app/application.js'></script>
+<script src='app/res/import.sys.js'></script>
+<script src='app/res/data/cloud.storage.js'></script>
+<script src='app/res/script/node.js'></script>
+<script src='app/pages/content/loading.js'></script>
+
+</html>
